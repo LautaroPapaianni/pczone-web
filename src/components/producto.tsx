@@ -1,10 +1,9 @@
 import Image from "next/image";
-import {playfair} from "./fonts/fonts";
 import carritoIcon from "@/imagenes/Icons/carritoIcon.svg";
 
 export default function Producto() {
     return (
-        <div className={" ${playfair.className} bg-white text-black rounded-lg p-5 m-5 max-w-[250px] h-[300px]"}>
+        <div className={"bg-white text-black rounded-lg p-5 m-5 max-w-[250px] h-[300px]"}>
             <Image src={""} alt="" width={200} height={150} />
             <p className="text-[16px]">Fuente ADATA XPG 1300W 80 Plus Platinum Full Modular</p>
             <div className="flex align-end justify-between">
