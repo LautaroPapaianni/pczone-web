@@ -1,14 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import logo_movile from "@/imagenes/logo-pcZone.png";
-import logo_whats from "@/imagenes/WhatsAppIcon.png";
-import logo_link from "@/imagenes/LinkedinIcon.png";
-import logo_insta from "@/imagenes/InstagramIcon.png";
-import logo_x from "@/imagenes/TwitterIcon.png";
+import logo_whats from "@/imagenes/Icons/whatsappIcon.png";
+import logo_link from "@/imagenes/Icons/LinkedinIcon.png";
+import logo_insta from "@/imagenes/Icons/InstagramIcon.png";
+import logo_x from "@/imagenes/Icons/TwitterIcon.png";
 
 export default function Footer() {
     return (
-        <footer className="bg-[#0E1C2F] text-white px-6 py-2">
+        <footer className="bg-[#0B1C3A] text-white px-6 py-2 mt-[30px]">
             <div className="flex items-center justify-around w-full">
                 {/* FOOTER: logo */}
                 <div className="flex justify-start my-4">
