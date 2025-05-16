@@ -1,6 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/imagenes/logo-pcZone.png";
+import logo_movile from "@/imagenes/logo-pcZone.png";
+import logo from "@/imagenes/PCZone_Horizntal.png";
+
 
 export default function Header() {
   return (
@@ -10,7 +12,8 @@ export default function Header() {
         {/* IZQUIERDA: logo + links */}
         <div className="flex items-center gap-10 flex-1">
           <Link href="#">
-            <Image src={logo} alt="PCZone Logo" width={70} height={40} className="object-contain rounded-2xl" />
+            <Image src={logo_movile} alt="PCZone Logo movile" width={70} height={40} className="object-contain rounded-2xl md:hidden" />
+            <Image src={logo} alt="PCZone Logo" width={100} height={40} className="object-contain rounded-full md:block" />
           </Link>
           <nav className="flex gap-10 font-medium">
             <Link href="#">INICIO</Link>
@@ -33,14 +36,14 @@ export default function Header() {
         </div>
 
         {/* DERECHA: enlaces extra */}
-        <div className="flex items-center gap-10 font-medium flex-1 justify-center">
+        <div className="flex items-center gap-10 font-medium flex-1 justify-center-safe">
           <Link href="#">GUIAS</Link>
           <Link href="#">🛒CARRITO</Link>
           <Link href="#">FAQ</Link> 
         </div>
         <div className="bg-white text-black rounded-full w-8 h-8 flex items-center justify-center">
-              👤
             <Link href="#" className="flex justify-start"> 
+              👤
           </Link>
         </div>
       </div>
