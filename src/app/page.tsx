@@ -14,7 +14,7 @@ export default function Home() {
 
         <div className="flex flex-col md:flex-row gap-6 justyfy-center">
         <Link
-          href="#"
+          href="productos"
           className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-25 py-10 text-5xl rounded-xl text-center transition min-w-[300px] "
         >
           Ver productos

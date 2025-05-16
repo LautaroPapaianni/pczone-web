@@ -12,7 +12,7 @@ export default function Header() {
         
         {/* IZQUIERDA: logo + links */}
         <div className="flex items-center gap-10 flex-1">
-          <Link href="#">
+          <Link href="/">
             <Image src={logo_movile} alt="PCZone Logo movile" width={70} height={40} className="object-contain rounded-2xl md:hidden" />
             <Image src={logo} alt="PCZone Logo" width={100} height={40} className="object-contain rounded-full md:block" />
           </Link>
